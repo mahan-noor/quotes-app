@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { HighlightDirective } from './highlight.directive';
-import { QuotesDetailComponent } from './quotes-detail/quotes-detail.component';
+import { QuotesDetailComponent } from './quotes/quotes-detail/quotes-detail.component';
 
 @NgModule({
   declarations: [
