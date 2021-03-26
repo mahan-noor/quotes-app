@@ -9,12 +9,12 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
 
   quotes:Quotes[] =[
-    {id:1,John:'Watch finding Nemo'},
-    {id:2,Amina:'If you really look closely, most overnight successes took a long time.'},
-    {id:3,Ilhan:'The future belongs to those who believe in the beauty of their dreams.'},
-    {id:4,Cynthia:'Things work out best for those who make the best of how things work out.'},
-    {id:5,Savannah:'Try not to become a man of success. Rather become a man of value'},
-    {id:6,Mariam:'Dont be afraid to give up the good to go for the great.'},
+    new Quotes{1, John:'Live for your dreams','Too many of us are not living our dreams because we are living our fears.',new Date(1991,6,4)),
+    new Quotes{2, Amina:'Success will take time','If you really look closely, most overnight successes took a long time.',new Date(2012,5,24)),
+    new Quotes{3, Ilhan:'Future is bright','The future belongs to those who believe in the beauty of their dreams.',new Date(2016,7,22)),
+    new Quotes{4, Cynthia:'Hard work pays','Things work out best for those who make the best of how things work out.',new Date(2009,3,1)),
+    new Quotes{5, Savannah:'Try not to become a man of success. Rather become a man of value',new Date(2020,3,14)),
+    new Quotes{6, Mariam:'Dont be afraid to give up the good to go for the great.',new Date(2020,3,14)),
     
   ]
   constructor() { }
