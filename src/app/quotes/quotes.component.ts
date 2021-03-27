@@ -17,6 +17,7 @@ export class QuotesComponent implements OnInit {
     new Quotes{6, Mariam:'Dont be afraid to give up the good to go for the great.',new Date(2020,3,14)),
     
   ]
+  
   deleteGoal(isComplete: any, index: string | number){
     if (isComplete) {
       let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
