@@ -10,7 +10,7 @@
   * HTML
   * CSS
   * Angular cli
-  * Bootsrap
+  * Bootstrap
 
   # Contact infomation
 
@@ -19,7 +19,7 @@
   # installation
 
   * you can clone https://github.com/mahan-noor/quotes-app.git
-  
+
 
 ## Development server
 
