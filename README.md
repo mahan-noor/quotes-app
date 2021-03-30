@@ -13,10 +13,13 @@
   * Bootsrap
 
   # Contact infomation
-  
+
   * Email me @ ismahanabey@gmail.com
+ 
+  # installation
 
-
+  * you can clone https://github.com/mahan-noor/quotes-app.git
+  
 
 ## Development server
 
