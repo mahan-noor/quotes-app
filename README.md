@@ -5,6 +5,19 @@
   
   * This is an angular cli app that displays quotes allow the user to input a quote,upvote,downvote and delete the quote and see how  many days have pasted since posted
 
+  # Technologies used
+  
+  * HTML
+  * CSS
+  * Angular cli
+  * Bootsrap
+
+  # Contact infomation
+  
+  * Email me @ ismahanabey@gmail.com
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
