@@ -20,6 +20,10 @@
 
   * you can clone https://github.com/mahan-noor/quotes-app.git
 
+  # Live Server
+   
+   * link to the live server https://mahan-noor.github.io/quotes-app/
+
 
 ## Development server
 
