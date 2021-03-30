@@ -5,18 +5,10 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 })
 export class HighlightDirective {
 
-  constructor(private elem:ElementRef) { }
-  @HostListener("click") onClicks(){
-    this.textDeco("line-through")
+  constructor(private elem:ElementRef) { 
+    elem.nativeElement.style.backgroundColor='grey';
   }
 
-  @HostListener("dblclick") onDoubleClicks(){
-    this.textDeco("None")
-  }
-
-  private textDeco(action:string){
-    this.elem.nativeElement.style.textDecoration=action;
-
-  }
+ 
 
 }

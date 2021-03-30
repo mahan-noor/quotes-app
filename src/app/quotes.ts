@@ -1,6 +1,8 @@
 export class Quotes {
-    public showInfomation: boolean;
-    constructor(public id: number,public name: string,public description: string, public completeDate: Date){
+  showInfomation: boolean ;
+  dislikes: any;
+  likes: number;
+    constructor(public id: number,public name: string,  public quotes: string, public author: string, public dateposted:Date,public like:number, public dislike:number){
       this.showInfomation=false;
     }
 }

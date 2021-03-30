@@ -1,21 +1,30 @@
-<div class="container">
-    <h1>My Quotes</h1>
-    <hr>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div *ngFor='let quote of quotes;let i = index'>
-                </div>
-                <div>
-                    <h4 id="{{i}}" appHighlight>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</h4>
-                    <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>  
-                </div>
-                <div *ngIf='quotes.showDescription'>
-                    <app-quotes-detail [quotes]='quotes'(isComplete) = 'deleteQuotes($event,i)'></app-quotes-detail>
-                </div>
-    
-            </div>
-        
+ <div>
+  <app-quotes-form (add)="addNewQuotes($event)"></app-quotes-form>
+</div>
+<div class="container quote-card-container">
+  <div *ngFor='let quote of quotes; let i = index'>
+    <div class="card shadow p-3 mb-5 bg-transparent rounded card quote-card ">
+      <div class="card-body">
+        <div class="card-header">
+          <strong>Quotted by: {{quote.name|uppercase}}</strong>
         </div>
-        <p *ngIf='quote.length> 5'>You have too many Quotes</p>
+        <hr>
+        <blockquote class="blockquote mb-0">
+          <p appHighlight *ngIf="highestUpvote()===quote.like && quote.like>0">
+            {{quote.quotes}} <br>
+          </p>
+          <p *ngIf="highestUpvote()!==quote.like || quote.like===0"> {{quote.quotes}} 
+          </p>
+        </blockquote>
+        <p>
+          Created: <span>{{ quote.dateposted|dateCount}}</span>
+        </p>
+
+        <br>
+        <div>
+          <app-quotes-detail [quote]='quote' (isComplete)='quoteDelete($event,i)'></app-quotes-detail>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

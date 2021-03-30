@@ -1,0 +1,5 @@
+ <div>  {{quote.author}} </div>
+ <div class="container-fluid" id="buttons"> 
+  <button class="btn  btn-success" (click)='upVote()'>{{quote.like}}<i class="bi bi-hand-thumbs-up"></i></button> 
+  <button class="btn  btn-hate" id="hate" (click)='downVote()'>{{quote.dislike}} <i class="bi bi-hand-thumbs-down"></i></button> 
+  <button class="btn  btn-danger" id="del" (click)='quotesDelete(true)'><i class="bi bi-trash"></i></button>  
