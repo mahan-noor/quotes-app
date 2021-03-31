@@ -23,7 +23,9 @@
   # Live Server
    
    * link to the live server https://mahan-noor.github.io/quotes-app/
-
+  
+  # licence and copyright
+  MIT Copyright (c) 2021 Ismahan Abey  
 
 ## Development server
 
